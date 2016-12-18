@@ -28,18 +28,11 @@ function OnCollisionEnter(collision : Collision) {
     if(collision.gameObject.tag=="Floor"){
         if(!onFloor){
             var script = GameObject.FindGameObjectsWithTag("GiftsGenerator")[0].GetComponent(GiftGenerator);
-<<<<<<< HEAD
             script.setGifts(script.getGifts()-1);                       
         } 
         if(type == 5 && type == 4){
             GetComponent.<AudioSource>().Play();
         }
-=======
-            script.setGifts(script.getGifts()-1);
-            
-        }
-        GetComponent.<AudioSource>().Play();
->>>>>>> b48be81dd5f87d0df5fb0caf59160c94c2dda10a
         onFloor = true;
     }   
     if(collision.gameObject.tag=="kid1"||collision.gameObject.tag=="kid2"||collision.gameObject.tag=="kid3"
