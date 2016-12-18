@@ -1,18 +1,24 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2015
+<<<<<<< HEAD
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoldGift", "HoldGift.csproj", "{B98A0A79-ADA7-6F29-E94F-D1FE8D170B9D}"
 EndProject
+=======
+>>>>>>> 0bdcbcb7ae948b911ffa5e86d583a5449353c59d
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+<<<<<<< HEAD
 		{B98A0A79-ADA7-6F29-E94F-D1FE8D170B9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B98A0A79-ADA7-6F29-E94F-D1FE8D170B9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B98A0A79-ADA7-6F29-E94F-D1FE8D170B9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B98A0A79-ADA7-6F29-E94F-D1FE8D170B9D}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+>>>>>>> 0bdcbcb7ae948b911ffa5e86d583a5449353c59d
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
