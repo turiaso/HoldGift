@@ -24,11 +24,15 @@ function Update () {
     transform.Rotate(Time.deltaTime, axisX, axisY);
 }
 
-function OnCollisionEnter(collision : Collision) {
-    //if(collision.gameObject.tag == "Destroyer")    
+function OnCollisionEnter(collision : Collision) {  
     if(collision.gameObject.tag=="Floor"){
+        if(!onFloor){
+            var script = GameObject.FindGameObjectsWithTag("GiftsGenerator")[0].GetComponent(GiftGenerator);
+            script.setGifts(script.getGifts()-1);
+        }
+        GetComponent.<AudioSource>().Play();
         onFloor = true;
-    }
+    }   
 }
 
 function OnMouseDown () {        
