@@ -4,7 +4,7 @@ public var itemsGen:  GameObject[];
 public var maxGifts:int;
 
 private var timeElapse:System.Double = 0;
-private var gifts:int = 0;
+public var gifts:int = 0;
 
 function Start () {
 	
@@ -32,5 +32,5 @@ function getGifts(){
 }
 
 function setGifts(_gifts:int){
-    gifts = -gifts;
+    gifts = _gifts;
 }

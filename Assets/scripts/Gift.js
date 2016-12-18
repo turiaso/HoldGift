@@ -27,8 +27,13 @@ function Update () {
 function OnCollisionEnter(collision : Collision) {
     //if(collision.gameObject.tag == "Destroyer")    
     if(collision.gameObject.tag=="Floor"){
+        if(!onFloor){
+            var script = GameObject.FindGameObjectsWithTag("GiftsGenerator")[0].GetComponent(GiftGenerator);
+            script.setGifts(script.getGifts()-1);
+        }
         onFloor = true;
-    }
+    }   
+    Debug.Log("COLISION!!!!! ");
 }
 
 function OnMouseDown () {        
