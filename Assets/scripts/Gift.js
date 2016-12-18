@@ -29,13 +29,21 @@ function OnCollisionEnter(collision : Collision) {
         if(!onFloor){
             var script = GameObject.FindGameObjectsWithTag("GiftsGenerator")[0].GetComponent(GiftGenerator);
             script.setGifts(script.getGifts()-1);
+            
         }
         GetComponent.<AudioSource>().Play();
         onFloor = true;
     }   
+    if(collision.gameObject.tag=="kid1"||collision.gameObject.tag=="kid2"||collision.gameObject.tag=="kid3"
+               || collision.gameObject.tag=="kid4"){
+        var scripter = GameObject.FindGameObjectsWithTag("GiftsGenerator")[0].GetComponent(GiftGenerator);
+        scripter.setGifts(scripter.getGifts()-1);
+        Destroy(gameObject);
+    }
 }
 
 function OnMouseDown () {        
+    Debug.Log("OnMouseDown ");
     transform.Rotate(Time.deltaTime, 20, 30);
     rb.AddForce(0,15,0,ForceMode.Impulse);
 }
