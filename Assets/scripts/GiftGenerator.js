@@ -10,7 +10,7 @@ function Start () {
 
 function Update () {
     timeElapse+= Time.deltaTime;
-    if(timeElapse>1.5f){
+    if(timeElapse>3f){
         var randomType = Mathf.FloorToInt(Random.Range( 0.0f,itemsGen.length+1));
         if(randomType>=itemsGen.length){
             randomType=0;
