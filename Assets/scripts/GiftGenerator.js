@@ -22,7 +22,7 @@ function Update () {
         var y= 6;
         var z= 0;
         var pos = Vector3 (x, y, z);
-        var posKing = Vector3 (x, y-1, 6);
+        var posKing = Vector3 (x, y-2, 6);
         var king = GameObject.FindGameObjectsWithTag("King")[0];
         king.transform.position= posKing;
         var randomKingSkin = Mathf.FloorToInt(Random.Range( 0.0f,4f));
