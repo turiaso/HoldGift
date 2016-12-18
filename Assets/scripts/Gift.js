@@ -32,7 +32,6 @@ function OnCollisionEnter(collision : Collision) {
 }
 
 function OnMouseDown () {        
-    Debug.Log("OnMouseDown ");
     transform.Rotate(Time.deltaTime, 20, 30);
     rb.AddForce(0,15,0,ForceMode.Impulse);
 }
