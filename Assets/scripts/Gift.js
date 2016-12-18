@@ -31,5 +31,5 @@ function OnCollisionEnter(collision : Collision) {
 function OnMouseDown () {
         
     Debug.Log("OnMouseDown ");
-    rb.AddForce(0,1,0,ForceMode.Impulse);
+    rb.AddForce(0,10,0,ForceMode.Impulse);
 }
