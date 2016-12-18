@@ -21,6 +21,9 @@ function Update () {
         var y= 6;
         var z= 0;
         var pos = Vector3 (x, y, z);
+        var posKing = Vector3 (x, y-1, 6);
+        var king = GameObject.FindGameObjectsWithTag("King")[0];
+        king.transform.position= posKing;
         Instantiate(itemsGen[randomType], pos, Quaternion.identity);
         timeElapse=0;
         gifts++;
