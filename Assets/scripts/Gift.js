@@ -4,9 +4,22 @@ public var type: int;
 private var onFloor: System.Boolean = false;
 private var timeOnFloor:System.Double = 0;
 
+public var bonusMaterial:  Material[];
+
 private var rb: Rigidbody;
 
 function Start () {
+    if(type==4){
+        var randomBonusSkin = Mathf.FloorToInt(Random.Range( 0.0f,4f));
+        var rend = GetComponent.<Renderer>();  
+        if(randomBonusSkin==0){
+            rend.sharedMaterial= bonusMaterial[0];
+        }else if (randomBonusSkin==1){
+            rend.sharedMaterial= bonusMaterial[1];
+        }else if (randomBonusSkin==2){
+            rend.sharedMaterial= bonusMaterial[2];
+        }
+    }
     rb = GetComponent.<Rigidbody>();
  }
 
@@ -26,11 +39,11 @@ function Update () {
 
 function OnCollisionEnter(collision : Collision) {  
     if(collision.gameObject.tag=="Floor"){
-        if(!onFloor){
+        if(!onFloor){                         
             var script = GameObject.FindGameObjectsWithTag("GiftsGenerator")[0].GetComponent(GiftGenerator);
             script.setGifts(script.getGifts()-1);
-        }
-        GetComponent.<AudioSource>().Play();
+            GetComponent.<AudioSource>().Play();            
+        }    
         onFloor = true;
     }   
 }
