@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
 Project("{2B0DC5D9-5AB2-9082-58F4-E7CA666340CA}") = "HoldGift", "Assembly-CSharp.csproj", "{7630C015-D0B1-6593-CC59-0DA86160F2F7}"
+=======
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoldGift", "HoldGift.csproj", "{B98A0A79-ADA7-6F29-E94F-D1FE8D170B9D}"
+>>>>>>> bc2a2ddb4aba38c76d0bceee4882eee388a11def
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +16,17 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+<<<<<<< HEAD
 		{7630C015-D0B1-6593-CC59-0DA86160F2F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7630C015-D0B1-6593-CC59-0DA86160F2F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7630C015-D0B1-6593-CC59-0DA86160F2F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7630C015-D0B1-6593-CC59-0DA86160F2F7}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+		{B98A0A79-ADA7-6F29-E94F-D1FE8D170B9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B98A0A79-ADA7-6F29-E94F-D1FE8D170B9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B98A0A79-ADA7-6F29-E94F-D1FE8D170B9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B98A0A79-ADA7-6F29-E94F-D1FE8D170B9D}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> bc2a2ddb4aba38c76d0bceee4882eee388a11def
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
