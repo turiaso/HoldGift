@@ -11,25 +11,28 @@ function Start () {
 }
 
 function Update () {
+    
+    var axisX=Random.Range(1, 3);
+    var axisY=Random.Range(1, 3);
     if(onFloor){
         timeOnFloor+=Time.deltaTime;
         if( timeOnFloor>1){
             Destroy(gameObject);
         }
     }
+    
+    transform.Rotate(Time.deltaTime, axisX, axisY);
 }
-
-//function OnCollisionEnter(collision : Collision) {
-//    Destroy(collision.gameObject);
-//}
 
 function OnCollisionEnter(collision : Collision) {
     //if(collision.gameObject.tag == "Destroyer")    
-    onFloor = true;
+    if(collision.gameObject.tag=="Floor"){
+        onFloor = true;
+    }
 }
 
-function OnMouseDown () {
-        
+function OnMouseDown () {        
     Debug.Log("OnMouseDown ");
+    transform.Rotate(Time.deltaTime, 20, 30);
     rb.AddForce(0,15,0,ForceMode.Impulse);
 }
