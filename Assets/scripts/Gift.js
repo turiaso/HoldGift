@@ -8,7 +8,7 @@ private var rb: Rigidbody;
 
 function Start () {
     rb = GetComponent.<Rigidbody>();
-}
+ }
 
 function Update () {
     
